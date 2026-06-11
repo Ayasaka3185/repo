@@ -1,0 +1,33 @@
+# Unreal generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# Local backups / generated scratch
+Intermediate_CodexBackup_*/
+
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+*.sln
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+Thumbs.db
+Desktop.ini
+
+# Logs and packaged builds
+*.log
+*.tmp
+*.bak
+*.zip
+*.7z
+*.rar
+PackagedBuilds/
