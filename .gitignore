@@ -5,29 +5,25 @@ Intermediate/
 Saved/
 Build/
 
-# Local backups / generated scratch
+# Codex/local backup folders
 Intermediate_CodexBackup_*/
 
-# IDE and OS files
+# Visual Studio / Rider / IDE files
 .vs/
-.vscode/
 .idea/
 *.sln
-*.VC.db
-*.opensdf
-*.sdf
 *.suo
 *.user
-*.userosscache
-*.sln.docstates
-Thumbs.db
-Desktop.ini
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
 
-# Logs and packaged builds
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs and local temp
 *.log
 *.tmp
-*.bak
-*.zip
-*.7z
-*.rar
-PackagedBuilds/
+

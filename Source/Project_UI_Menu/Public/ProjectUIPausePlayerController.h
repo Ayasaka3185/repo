@@ -5,6 +5,7 @@
 #include "ProjectUIPausePlayerController.generated.h"
 
 class UPauseMenuWidget;
+class AUIDemoDialogueNPC;
 
 UCLASS()
 class PROJECT_UI_MENU_API AProjectUIPausePlayerController : public APlayerController
@@ -17,7 +18,13 @@ protected:
 
 private:
 	void TogglePauseMenu();
+	void TryInteract();
+	void SpawnDemoNPCIfNeeded();
+	AUIDemoDialogueNPC* FindNearestInteractableNPC() const;
 
 	UPROPERTY(Transient)
 	TObjectPtr<UPauseMenuWidget> PauseMenuWidget;
+
+	UPROPERTY(Transient)
+	TObjectPtr<AUIDemoDialogueNPC> SpawnedDemoNPC;
 };
