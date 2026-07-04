@@ -58,10 +58,10 @@ TSharedRef<SWidget> ULoadingScreenWidget::RebuildWidget()
 	BottomShade->SetBrushColor(FLinearColor(0.f, 0.f, 0.f, 0.38f));
 	AddLoadingCanvasChild(RootCanvas, BottomShade, FAnchors(0.f, 1.f, 1.f, 1.f), FMargin(0.f, -245.f, 0.f, 245.f), FVector2D::ZeroVector, 1);
 
-	UTextBlock* LoreTitle = CreateLoadingText(WidgetTree, TEXT("\u4E16\u754C\u89C21"), 24.f, FLinearColor::White);
+	UTextBlock* LoreTitle = CreateLoadingText(WidgetTree, TEXT("\u8FD9\u662F\u4E00\u4E2A\u52A0\u8F7D\u4E16\u754C\u89C2"), 24.f, FLinearColor::White);
 	AddLoadingCanvasChild(RootCanvas, LoreTitle, FAnchors(0.f, 1.f), FMargin(58.f, -168.f, 900.f, 32.f), FVector2D::ZeroVector, 2);
 
-	UTextBlock* LoreLineA = CreateLoadingText(WidgetTree, TEXT("\u6000\u5FF5\u805A\u7206\u961F\u6700\u597D\u7684\u4E09\u4E2A\u4EBA\uFF1A\u7231\u5F25\u65AF\uFF08\u5DF2\u590D\u6D3B\uFF09\u3001\u8FBE\u59AE\u5A05\uFF08\u5DF2\u7D2B\u7802\uFF09\u3001\u5343\u54B2\uFF08\u5DF2\u9690\u8EAB\uFF09"), 20.f, FLinearColor(0.82f, 0.82f, 0.82f, 1.f));
+	UTextBlock* LoreLineA = CreateLoadingText(WidgetTree, TEXT(""), 20.f, FLinearColor(0.82f, 0.82f, 0.82f, 1.f));
 	UTextBlock* LoreLineB = CreateLoadingText(WidgetTree, TEXT(""), 20.f, FLinearColor(0.82f, 0.82f, 0.82f, 1.f));
 	AddLoadingCanvasChild(RootCanvas, LoreLineA, FAnchors(0.f, 1.f), FMargin(58.f, -126.f, 1120.f, 28.f), FVector2D::ZeroVector, 2);
 	AddLoadingCanvasChild(RootCanvas, LoreLineB, FAnchors(0.f, 1.f), FMargin(58.f, -92.f, 1120.f, 28.f), FVector2D::ZeroVector, 2);
